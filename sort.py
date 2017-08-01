@@ -1,3 +1,4 @@
+import math
 # open the doc
 open_doc = open("array.txt")
 
@@ -34,7 +35,7 @@ def bubble_sort(arg):
         x += 1
 
 
-
+    print("it took the bubble sort algorythm " + str(times) + " times to sort out of the max amout of times " + str(math.pow(len(new_array) - 1, 2)))
     print(times)
     print(new_array)
     print(''.join(map(str,new_array)) == answer)
