@@ -7,5 +7,9 @@ numbers_to_sort = open_doc.read()
 # close the doc
 open_doc.close()
 
-# print the sorted numbers
-print(numbers_to_sort)
+# sorting algorythm
+def sort(arg):
+    sorted_numbers = arg
+    print(sorted_numbers)
+
+sort(numbers_to_sort)
