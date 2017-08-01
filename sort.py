@@ -8,7 +8,7 @@ numbers_to_sort = open_doc.read()
 open_doc.close()
 
 # sorting algorythm
-def sort(arg):
+def bubble_sort(arg):
     sorted_numbers = arg
     array = []
     new_array = []
@@ -39,4 +39,4 @@ def sort(arg):
     print(new_array)
     print(''.join(map(str,new_array)) == answer)
 
-sort(numbers_to_sort)
+bubble_sort(numbers_to_sort)
