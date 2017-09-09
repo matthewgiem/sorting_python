@@ -1,19 +1,14 @@
 def bubble_sort(arg):
-    new_array = arg
+    array = list(arg)
     # sort
-    i = 0
-    x = 0
+    swaps = 0
     times = 0
-    for x in range(0, len(new_array) - 1):
-        for i in range(0, len(new_array) - 1):
-            if new_array[i] > new_array[i + 1]:
-                num1 = new_array[i]
-                num2 = new_array[i + 1]
-                new_array[i] = num2
-                new_array[i + 1] = num1
-            i += 1
+    for x in range(len(array)):
+        for i in range(len(array) - 1 - x):
+            if array[i] > array[i + 1]:
+                array[i], array[i + 1] = array[i + 1], array[i]
+                swaps += 1
             times += 1
-            if i == len(new_array) - x:
-                break
-        x += 1
-    return new_array, times
+            # if i == len(array) - x:
+            #     break
+    return array, times, "Bubble Sort", swaps
