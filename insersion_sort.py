@@ -1,15 +1,18 @@
 def insersion_sort(arg):
-    # create new list not just a pointer
     array = list(arg)
-    # sort
     times = 0
     swaps = 0
-    for x in range(1, len(array)):
-        for i in range(0, len(array) - (len(array) - x)):
-            if array[x - i] < array[x - 1 - i]:
-                array[x - i], array[x - 1 - i] = array[x - 1 - i], array[x - i]
-                swaps += 1
+    for x in range(len(array)):
+        for i in range(len(array) - 1):
             times += 1
-            if array[x - i] >= array[x - 1 - i]:
-                break
+            if array[i] > array[i + 1]:
+                array[i], array[i + 1] = array[i + 1], array[i]
+                swaps += 1
+                for j in range(x):
+                    times += 1
+                    if array[i] > array[i - j]:
+                        array[i], array[i - j] = array[i - j], array[i]
+                        swaps += 1
+                    else:
+                        break
     return array, times, "Insertion Sort", swaps
