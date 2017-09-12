@@ -1,9 +1,10 @@
-from insersion_sort import insersion_sort
+from insertion_sort import insertion_sort
 from bubble_sort import bubble_sort
 from print_answer import print_answer
 from quick_sort import quick_sort
 from check_if_in_order import check_if_in_order
 from optimized_bubble_sort import optimized_bubble_sort
+from optimized_insertion_sort import optimized_insertion_sort
 
 # open the doc
 open_doc = open("array.txt")
@@ -26,13 +27,14 @@ almost = [1, 2, 3, 4, 3, 6, 9, 10, 8, 9]
 # ----------------------- #
 # print_answer(bubble_sort(arg))
 # print_answer(optimized_bubble_sort(arg))
-# print_answer(insersion_sort(arg))
-print_answer(bubble_sort(test))
-print_answer(insersion_sort(test))
-print_answer(optimized_bubble_sort(test))
+# print_answer(insertion_sort(arg))
+# print_answer(bubble_sort(test))
+# print_answer(insertion_sort(test))
+# print_answer(optimized_bubble_sort(test))
 # print_answer(bubble_sort(almost))
 # print_answer(optimized_bubble_sort(almost))
-# print_answer(insersion_sort(almost))
+# print_answer(insertion_sort(almost))
 
 # working on
 # ---------------------- #
+print_answer(optimized_insertion_sort(arg))
