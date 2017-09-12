@@ -17,24 +17,26 @@ open_doc.close()
 
 # turn array of strings to array of integers
 array = numbers_to_sort.split()
-arg = []
+random_numbers = []
 for x in array:
-    arg.append(int(x))
-
-test = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-almost = [1, 2, 3, 4, 3, 6, 9, 10, 8, 9]
+    random_numbers.append(int(x))
+arg = [random_numbers, "large group of random numbers"]
+test = [[10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "reversed"]
+almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 # finished
 # ----------------------- #
-# print_answer(bubble_sort(arg))
-# print_answer(optimized_bubble_sort(arg))
-# print_answer(insertion_sort(arg))
-# print_answer(bubble_sort(test))
-# print_answer(insertion_sort(test))
-# print_answer(optimized_bubble_sort(test))
-# print_answer(bubble_sort(almost))
-# print_answer(optimized_bubble_sort(almost))
-# print_answer(insertion_sort(almost))
+print_answer(bubble_sort(arg))
+print_answer(optimized_bubble_sort(arg))
+print_answer(insertion_sort(arg))
+print_answer(optimized_insertion_sort(arg))
+print_answer(bubble_sort(test))
+print_answer(insertion_sort(test))
+print_answer(optimized_bubble_sort(test))
+print_answer(optimized_insertion_sort(test))
+print_answer(bubble_sort(almost))
+print_answer(optimized_bubble_sort(almost))
+print_answer(insertion_sort(almost))
+print_answer(optimized_insertion_sort(almost))
 
 # working on
 # ---------------------- #
-print_answer(optimized_insertion_sort(arg))

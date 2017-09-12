@@ -1,5 +1,6 @@
 def bubble_sort(arg):
-    array = list(arg)
+    array = list(arg[0])
+    type_of_data = arg[1]
     swaps = 0
     times = 0
     for x in range(len(array)):
@@ -14,4 +15,4 @@ def bubble_sort(arg):
             # if len(array) == 10:
             #     print(array)
             times += 1
-    return array, times, "Bubble Sort", swaps, arg
+    return array, times, "Bubble Sort", swaps, arg[0], type_of_data

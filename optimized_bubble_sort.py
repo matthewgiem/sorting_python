@@ -1,5 +1,6 @@
 def optimized_bubble_sort(arg):
-    array = list(arg)
+    array = list(arg[0])
+    type_of_data = arg[1]
     swaps = 0
     times = 0
     for x in range(len(array)):
@@ -12,4 +13,4 @@ def optimized_bubble_sort(arg):
             times += 1
         if exit:
             break
-    return array, times, "Optimized Bubble Sort", swaps, arg
+    return array, times, "Optimized Bubble Sort", swaps, arg[0], type_of_data
