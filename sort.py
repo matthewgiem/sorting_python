@@ -26,10 +26,13 @@ almost = [1, 2, 3, 4, 3, 6, 9, 10, 8, 9]
 # ----------------------- #
 # print_answer(bubble_sort(arg))
 # print_answer(optimized_bubble_sort(arg))
-# print_answer(bubble_sort(test))
-# print_answer(optimized_bubble_sort(test))
+# print_answer(insersion_sort(arg))
+print_answer(bubble_sort(test))
+print_answer(insersion_sort(test))
+print_answer(optimized_bubble_sort(test))
 # print_answer(bubble_sort(almost))
 # print_answer(optimized_bubble_sort(almost))
+# print_answer(insersion_sort(almost))
 
 # working on
 # ---------------------- #
