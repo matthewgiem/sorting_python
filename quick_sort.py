@@ -1,11 +1,9 @@
-# from random import *
 def quick_sort(arg):
-    new_array = arg
-    x = 0
-    j = 0
-    i = -1
-    for x in range(0, len(new_array) - 1):
-        if new_array[i] < new_array[x]:
-            num1 = new_array[i]
-            num2 = new_array[x]
-            new_array[i] = num2
+    array = list(arg[0])
+    type_of_data = arg[1]
+    times = 0
+    swaps = 0
+    for i in range(len(array) - 1):
+        if array[i] > array[i + 1]:
+            array[i], array[i + 1] = array[i + 1], array[i]
+    return array, times, "Quick Sort", swaps, arg[0], type_of_data

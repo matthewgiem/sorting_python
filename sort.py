@@ -25,18 +25,19 @@ test = [[10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "reversed"]
 almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 # finished
 # ----------------------- #
-print_answer(bubble_sort(arg))
-print_answer(optimized_bubble_sort(arg))
-print_answer(insertion_sort(arg))
-print_answer(optimized_insertion_sort(arg))
-print_answer(bubble_sort(test))
-print_answer(insertion_sort(test))
-print_answer(optimized_bubble_sort(test))
-print_answer(optimized_insertion_sort(test))
-print_answer(bubble_sort(almost))
-print_answer(optimized_bubble_sort(almost))
-print_answer(insertion_sort(almost))
-print_answer(optimized_insertion_sort(almost))
+# print_answer(bubble_sort(arg))
+# print_answer(optimized_bubble_sort(arg))
+# print_answer(insertion_sort(arg))
+# print_answer(optimized_insertion_sort(arg))
+# print_answer(bubble_sort(test))
+# print_answer(insertion_sort(test))
+# print_answer(optimized_bubble_sort(test))
+# print_answer(optimized_insertion_sort(test))
+# print_answer(bubble_sort(almost))
+# print_answer(optimized_bubble_sort(almost))
+# print_answer(insertion_sort(almost))
+# print_answer(optimized_insertion_sort(almost))
 
 # working on
 # ---------------------- #
+print_answer(quick_sort(test))
