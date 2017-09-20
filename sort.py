@@ -5,6 +5,7 @@ from quick_sort import quick_sort
 from check_if_in_order import check_if_in_order
 from optimized_bubble_sort import optimized_bubble_sort
 from optimized_insertion_sort import optimized_insertion_sort
+from return_median_of_3 import return_median_of_3
 
 # open the doc
 open_doc = open("array.txt")
@@ -40,4 +41,29 @@ almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 
 # working on
 # ---------------------- #
-print_answer(quick_sort(test))
+# print_answer(quick_sort(test))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
+print(return_median_of_3(test[0]))
