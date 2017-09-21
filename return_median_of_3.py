@@ -8,7 +8,6 @@ def return_median_of_3(array):
             pass
         else:
             partitions.append(to_append)
-    print(partitions)
     if partitions[0] < partitions[1]:
         if partitions[0] > partitions[2]:
             return partitions[0]
