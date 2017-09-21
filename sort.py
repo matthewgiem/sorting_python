@@ -6,6 +6,7 @@ from check_if_in_order import check_if_in_order
 from optimized_bubble_sort import optimized_bubble_sort
 from optimized_insertion_sort import optimized_insertion_sort
 from return_median_of_3 import return_median_of_3
+from sort_report import sort_report
 
 # open the doc
 open_doc = open("array.txt")
@@ -27,21 +28,23 @@ almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 # print(return_median_of_3(test[0]))
 # finished
 # ----------------------- #
-print_answer(bubble_sort(arg))
-print_answer(optimized_bubble_sort(arg))
-print_answer(insertion_sort(arg))
-print_answer(optimized_insertion_sort(arg))
-print_answer(quick_sort(arg))
-print_answer(bubble_sort(test))
-print_answer(insertion_sort(test))
-print_answer(optimized_bubble_sort(test))
-print_answer(optimized_insertion_sort(test))
-print_answer(quick_sort(test))
-print_answer(bubble_sort(almost))
-print_answer(optimized_bubble_sort(almost))
-print_answer(insertion_sort(almost))
-print_answer(optimized_insertion_sort(almost))
-print_answer(quick_sort(almost))
+# print_answer(bubble_sort(arg))
+# print_answer(optimized_bubble_sort(arg))
+# print_answer(insertion_sort(arg))
+# print_answer(optimized_insertion_sort(arg))
+# print_answer(quick_sort(arg))
+# print_answer(bubble_sort(test))
+# print_answer(insertion_sort(test))
+# print_answer(optimized_bubble_sort(test))
+# print_answer(optimized_insertion_sort(test))
+# print_answer(quick_sort(test))
+# print_answer(bubble_sort(almost))
+# print_answer(optimized_bubble_sort(almost))
+# print_answer(insertion_sort(almost))
+# print_answer(optimized_insertion_sort(almost))
+# print_answer(quick_sort(almost))
+
+sort_report([arg, test, almost])
 
 
 # working on
