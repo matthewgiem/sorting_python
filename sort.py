@@ -7,19 +7,8 @@ from optimized_bubble_sort import optimized_bubble_sort
 from optimized_insertion_sort import optimized_insertion_sort
 from return_median_of_3 import return_median_of_3
 from sort_report import sort_report
+from list_maker import list_maker
 import random
-
-def list_maker(how_many, greatest_length, largest_number):
-    lists_of_lists_for_tests = []
-    for x in range(how_many):
-        array = []
-        for y in range(random.randint(10, greatest_length)):
-            array.append(random.randint(0, largest_number))
-        arrays = [array, "This array has {} elements is random".format(len(array))]
-        lists_of_lists_for_tests.append(arrays)
-    return lists_of_lists_for_tests
-# print(list_maker(4, 100, 9))
-# list_maker(4, 100, 9)
 
 
 
@@ -60,7 +49,7 @@ almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 # print_answer(quick_sort(almost))
 
 # sort_report([arg, test, almost])
-sort_report(list_maker(2, 1000, 9))
+sort_report(list_maker(2, 500, 1000, 9))
 
 
 # working on
