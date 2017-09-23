@@ -10,9 +10,6 @@ def quick_sort(arg):
     partition_options = random.sample(range(0, len(array)), 5)
     partition_options.sort()
     partition = partition_options[2]
-    # partition = return_median_of_3(array)
-    # partition_options = random.sample(range(0, len(array)), 3)
-
     less = []
     greater = []
     for i in range(len(array)):
