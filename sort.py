@@ -9,6 +9,7 @@ from return_median_of_3 import return_median_of_3
 from sort_report import sort_report
 from list_maker import list_maker
 from optimized_quick_sort import optimized_quick_sort
+from new_quick_sort import new_quick_sort
 import random
 
 
@@ -31,6 +32,7 @@ arg = [random_numbers, "large group of random numbers"]
 test = [[10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "reversed"]
 almost = [[10, 2, 3, 1, 4, 3, 5, 10, 8, 9], "few swaps"]
 random_ten = [[2,5,1,7,9,3,10,4,6,8], "random 10"]
+random_twenty = [[3,5,2,6,8,1,9,6,2,9,2,0,1,3,4,7,2,9,10,4], "random 20"]
 # print(return_median_of_3(test[0]))
 # finished
 # ----------------------- #
@@ -56,5 +58,8 @@ random_ten = [[2,5,1,7,9,3,10,4,6,8], "random 10"]
 
 # working on
 # ---------------------- #
+# print(random_ten[0])
+# print(new_quick_sort(random_ten))
+new_quick_sort(random_twenty)
 
-print_answer(optimized_quick_sort(random_ten))
+# print_answer(quick_sort(random_ten))

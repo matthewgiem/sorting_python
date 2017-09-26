@@ -1,22 +1,24 @@
 import random
 from optimized_insertion_sort import optimized_insertion_sort
 def quick_sort(arg):
-    optimized_quick_sort(arg, 0, len(arg) - 1)
-
-def optimized_quick_sort(arg, high, low):
-    array = list(arg[0])
     type_of_data = arg[1]
+    array = list(arg[0])
+    answer = optimized_quick_sort(array, 0, len(arg) - 1)
+    return array, answer[1], answer[2], answer[3], arg[0], type_of_data
+
+
+def optimized_quick_sort(arg, low, high):
     times = 0
     swaps = 0
-
-    j = 0
-    for i in range(len(array)):
-        print(array)
-        print("j = {}".format(j))
-        print("i = {}".format(i))
-        print("comparing {} and {}".format(array[i], array[-1]))
-        if array[i] <= array[-1]:
-            print("{} <= {} so we are swapping {} with {}".format(array[i], array[-1], array[i], array[j]))
+    array = arg
+    j = low
+    for i in range(high, low):
+        # print(array)
+        # print("j = {}".format(j))
+        # print("i = {}".format(i))
+        # print("comparing {} and {}".format(array[i], array[-1]))
+        if array[i] <= array[high]:
+            # print("{} <= {} so we are swapping {} with {}".format(array[i], array[-1], array[i], array[j]))
             # print("the elemet being compared to {} is {}".format(array[-1], array[i]))
             array[i], array[j] = array[j], array[i]
             j +=1
@@ -24,7 +26,7 @@ def optimized_quick_sort(arg, high, low):
 
 
 
-    return array, times, "Quick Sort", swaps, arg[0], type_of_data
+    return array, times, "Quick Sort", swaps
 
 def quick_sort(A):
     quick_sort2(A, 0, len(A)-1)
