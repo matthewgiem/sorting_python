@@ -10,17 +10,7 @@ def new_quick_sort(arg):
 
 def quick_sort2(array, low, high):
     j = low
-    # print(array[low:high])
-    # list_of_3 = random.sample(array[low:high])
-    # print(list_of_3)
-    # median = int(median(list_of_3))
-    # print(median)
-    # partition = median
-    # partition = int(median(random.sample(array[low:high], 3)))
-    list_of_3 = random.sample(array[low:high], 3)
-    middle = median(list_of_3)
-    integer = int(middle)
-    partition = array.index(integer)
+    partition = array.index(int(median(random.sample(array[low:high], 3))))
     array[-1], array[partition] = array[partition], array[-1]
     for i in range(low, high + 1):
         if i == high:
