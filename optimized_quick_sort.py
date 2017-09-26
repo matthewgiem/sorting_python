@@ -1,6 +1,9 @@
 import random
 from optimized_insertion_sort import optimized_insertion_sort
-def optimized_quick_sort(arg):
+def quick_sort(arg):
+    optimized_quick_sort(arg, 0, len(arg) - 1)
+
+def optimized_quick_sort(arg, high, low):
     array = list(arg[0])
     type_of_data = arg[1]
     times = 0
