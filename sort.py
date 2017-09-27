@@ -62,7 +62,7 @@ bubble_sort_for_quick_sort_test = [1,1,1,4,8,3,9,6,2,9,2,0,5,3,8,7,2,4,3,1]
 # ---------------------- #
 # print(random_ten[0])
 # print(new_quick_sort(random_ten))
-new_quick_sort(arg)
+print(new_quick_sort(arg))
 # print(bubble_sort_for_quick_sort(bubble_sort_for_quick_sort_test, 3, 18))
 
 # print_answer(quick_sort(random_ten))

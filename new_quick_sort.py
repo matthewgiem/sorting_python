@@ -4,12 +4,9 @@ from numpy import median as med
 def new_quick_sort(arg):
     type_of_data = arg[1]
     array = list(arg[0])
-    print(array)
-    quick_sort2(array, 0, len(array) - 1)
-    # print(quick_sort2(array, 0, len(array) - 1))
+    return quick_sort2(array, 0, len(array) - 1)
 
 def quick_sort2(array, low, high):
-    print("inside")
     j = low
     partition = array.index(int(med(rand.sample(array[low:high], 3))))
     array[high], array[partition] = array[partition], array[high]
@@ -19,25 +16,15 @@ def quick_sort2(array, low, high):
         if array[i] <= array[high]:
             array[i], array[j] = array[j], array[i]
             j += 1
-    # print("low is {}".format(low))
-    # print("partition is {}".format(partition))
-    if partition - low < 10:
-        print("#1")
-        # print("the low point is {}".format(low))
-        # print("the partition is {}".format(partition))
+    if partition - low <= 3:
         bubble_sort_for_quick_sort(array, low, partition)
     else:
-        print("#2")
-        # print("the partition is less than 10 its {}".format(partition - low))
         quick_sort2(array, low, partition - 1)
-    if high - partition < 10:
-        print("#3")
+    if high - partition <= 3:
         bubble_sort_for_quick_sort(array, partition + 1, high)
     else:
-        print("#4")
         quick_sort2(array, partition + 1, high)
-
-    print(array)
+    return array
 
 
 def bubble_sort_for_quick_sort(array, low, high):
