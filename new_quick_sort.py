@@ -1,5 +1,5 @@
-import random as rand
-from numpy import median as med
+import random
+from numpy import median
 
 def new_quick_sort(arg):
     type_of_data = arg[1]
@@ -8,7 +8,7 @@ def new_quick_sort(arg):
 
 def quick_sort2(array, low, high):
     j = low
-    partition = array.index(int(med(rand.sample(array[low:high], 3))))
+    partition = array.index(int(median(random.sample(array[low:high], 3))))
     array[high], array[partition] = array[partition], array[high]
     for i in range(low, high + 1):
         if i == high:
@@ -28,17 +28,8 @@ def quick_sort2(array, low, high):
 
 
 def bubble_sort_for_quick_sort(array, low, high):
-    # print("low = {}".format(low))
-    # print("high = {}".format(high))
-    # print("x goes between {}, and {}".format(0, high - low))
     for x in range(high - low):
-        # print("x = {}".format(x))
-        # print(array)
-        # print("i goes between in the range of {}".format(range(low, high - x)))
         for i in range(low, high - x):
-            # print("i = {}".format(i))
-            # print("comparing {} and {}".format(array[i], array[i + 1]))
             if array[i] > array[i + 1]:
                 array[i], array[i + 1] = array[i + 1], array[i]
-                # print(array)
     return array
