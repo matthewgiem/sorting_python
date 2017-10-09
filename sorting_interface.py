@@ -1,3 +1,13 @@
+from insertion_sort import insertion_sort
+from bubble_sort import bubble_sort
+from quick_sort import quick_sort
+from optimized_bubble_sort import optimized_bubble_sort
+from optimized_insertion_sort import optimized_insertion_sort
+from optimized_quick_sort import optimized_quick_sort
+from new_quick_sort import new_quick_sort
+from new_quick_sort import bubble_sort_for_quick_sort
+import random
+
 def list_of_algorythms():
     print('''
     1.  Bubble Sort
