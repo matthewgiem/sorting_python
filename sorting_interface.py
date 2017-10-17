@@ -19,8 +19,10 @@ def list_of_algorythms():
 
 def what_type_of_data():
     while True:
-        number_of_integers = int(raw_input("how many data points would you like > "))
-        if number_of_integers < 10:
+        number_of_integers = raw_input("how many data points would you like > ")
+        if number_of_integers.lower() == "stop":
+            break
+        elif int(number_of_integers) < 10:
             print("you need to choose a value greater than or equal to 10")
         else:
             return number_of_integers
