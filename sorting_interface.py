@@ -17,7 +17,7 @@ def list_of_algorythms():
     5.  Optimized version of Insertion Sort
     ''')
 
-def what_type_of_data():
+def what_type_of_data(algorythm):
     while True:
         number_of_integers = raw_input("how many data points would you like > ")
         if number_of_integers.lower() == "stop":
@@ -33,8 +33,11 @@ while True:
     print("If at any time you wish to exit the program just enter 'STOP' in to the prompt")
     list_of_algorythms()
     choice = raw_input("what algorythm do you wanna use? ")
-    if choice == "STOP":
+    if choice.lower() == "stop":
         print("thanks for using the sorting service")
         break
-    what_type_of_data()
+    if 0 < int(choice) < 6:
+        what_type_of_data(choice)
+    else:
+        print("didn't make it")
     print("end of program")
