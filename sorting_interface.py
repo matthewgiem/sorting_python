@@ -17,7 +17,7 @@ def list_of_algorythms():
     5.  Optimized version of Insertion Sort
     ''')
 
-def what_type_of_data(algorythm):
+def what_type_of_data():
     while True:
         number_of_integers = raw_input("how many data points would you like > ")
         if number_of_integers.lower() == "stop":
@@ -37,7 +37,10 @@ while True:
         print("thanks for using the sorting service")
         break
     if 0 < int(choice) < 6:
-        what_type_of_data(choice)
+        number = what_type_of_data()
+        if choice == 1:
+            bubble_sort(number)
+
     else:
         print("didn't make it")
     print("end of program")
